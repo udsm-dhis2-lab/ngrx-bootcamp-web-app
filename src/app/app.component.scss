@@ -1,0 +1,43 @@
+/* Ensure the body and html have 100% height to fill the viewport */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Header styling */
+app-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    /* Ensure the header is above other content */
+    background: #fff;
+    /* Set a background color if needed */
+    border-bottom: 1px solid #ddd;
+    /* Optional border for separation */
+}
+
+/* Footer styling */
+app-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    /* Ensure the footer is above other content */
+    background: #fff;
+    /* Set a background color if needed */
+    border-top: 1px solid #ddd;
+    /* Optional border for separation */
+}
+
+/* Main content area adjustment */
+main {
+    padding-top: 60px;
+    /* Adjust according to header height */
+    padding-bottom: 40px;
+    /* Adjust according to footer height */
+}

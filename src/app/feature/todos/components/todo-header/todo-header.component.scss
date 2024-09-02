@@ -1,0 +1,513 @@
+ul li:hover {
+	cursor:-moz-grab; 
+	cursor:grab;
+}
+.delete {
+    font-size: 30px;
+    float: right;
+    padding: 5px;
+}
+
+ul.todo-item:empty {
+	display: none;
+}
+
+h2 {
+	margin: 120px;
+	position: absolute;
+	top: -120px;
+	width: 100%;
+	font-size: 50px;
+	font-weight: bold;
+	text-align: center;
+	color: #b3b3b3;
+	color: rgba(255, 255, 255, 0.3);
+	text-shadow: -1px -1px rgba(0, 0, 0, 0.2);
+	-webkit-text-rendering: optimizeLegibility;
+	-moz-text-rendering: optimizeLegibility;
+	-ms-text-rendering: optimizeLegibility;
+	-o-text-rendering: optimizeLegibility;
+	text-rendering: optimizeLegibility;
+}
+
+.adding-btn {
+	font-size: 50px;
+	margin: auto;
+	color: #8d7d77;
+	text-align: center;
+	fill-opacity: inherit;
+	float: right;
+	margin-right: 120px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.adding-btn:hover {
+	cursor: pointer;
+}
+
+#udsm-dhis-club-todo-list-completed.completed {
+	color: green;
+}
+
+.delete:hover {
+    color: red;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.completed img {
+	float: right;
+	margin-right: 20px;
+}
+
+.completed:hover {
+	text-shadow: 3px 0px 20px rgb(255, 0, 0);
+    font-size: 60;
+	font-weight: bold;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+}
+
+.remove {
+    float: right;
+	font-size: 28px;
+	font-weight: bold;
+	color: red;
+}
+
+.remove:hover {
+    text-shadow: 3px 0px 20px rgb(255, 0, 0);
+    font-size: 60;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.input-todo-item {
+    margin-left: 60px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.todo-item {
+    padding: 10px;
+    margin-left: 0px !important;
+}
+
+#create-new-todo {
+    position: relative;
+    color: inherit;
+    // width: 520px;
+    width: 40vw;
+    position: relative;
+	margin: 0;
+	font-size: 24px;
+	font-family: inherit;
+	line-height: 1.4em;
+	border: 0;
+	outline: none;
+	color: inherit;
+	padding: 6px;
+	border: 1px solid #999;
+	box-shadow: inset 0 -1px 5px 0 rgba(0, 0, 0, 0.2);
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-ms-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+	/* font-smoothing: antialiased; */
+}
+
+#add {
+
+}
+
+
+/*
+#######################################################################
+    === START:  UDSM DHIS2 Club -  TODO APP - THE OVERALL MAIN DIV OF THE APP ===
+#######################################################################
+*/
+
+#udsm-dhis-club-main-app {
+	background: #fff;
+	background: rgba(255, 255, 255, 0.9);
+	margin: 130px 0 40px 0;
+	border: 1px solid #ccc;
+    position: relative;
+    width: 50vw;
+    margin: auto;
+    margin-top: 150px;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2),
+				0 25px 50px 0 rgba(0, 0, 0, 0.15);
+}
+
+#udsm-dhis-club-main-app:before {
+	content: '';
+	border-left: 15px solid #000000;
+	border-right: 2px solid #ff0202;
+	width: 2px;
+	position: absolute;
+	top: 0;
+	left: 40px;
+	height: 100%;
+}
+
+#udsm-dhis-club-main-app input::-webkit-input-placeholder {
+	font-style: italic;
+}
+
+#udsm-dhis-club-main-app input::-moz-placeholder {
+	font-style: italic;
+	color: #a9a9a9;
+}
+
+
+
+#udsm-dhis-club-main-app h1 {
+	position: absolute;
+	top: -120px;
+	width: 100%;
+	font-size: 50px;
+	font-weight: bold;
+	text-align: center;
+	color: #b3b3b3;
+	color: rgba(255, 255, 255, 0.3);
+	text-shadow: -1px -1px rgba(0, 0, 0, 0.2);
+	-webkit-text-rendering: optimizeLegibility;
+	-moz-text-rendering: optimizeLegibility;
+	-ms-text-rendering: optimizeLegibility;
+	-o-text-rendering: optimizeLegibility;
+	text-rendering: optimizeLegibility;
+}
+
+h3 {
+	font-size: 18px;
+	position: relative;
+	margin: auto;
+	text-align: center;
+	color: #b3b3b3;
+	color: rgba(255, 255, 255, 0.3);
+	text-shadow: -1px -1px rgba(0, 0, 0, 0.2);
+	-webkit-text-rendering: optimizeLegibility;
+	-moz-text-rendering: optimizeLegibility;
+	-ms-text-rendering: optimizeLegibility;
+	-o-text-rendering: optimizeLegibility;
+	text-rendering: optimizeLegibility;
+}
+
+.horizontal {
+	color: red;
+	height: 2px;
+}
+
+
+
+/*
+#######################################################################
+    === START:  UDSM DHIS2 Club -  TODO APP - THE OVERALL MAIN DIV OF THE APP ===
+#######################################################################
+*/
+
+
+/*
+#######################################################################
+    === START:  UDSM DHIS2 Club -  TODO APP - THE HEADER OF THE TODO APP ===
+#######################################################################
+*/
+
+#udsm-dhis-club-header {
+	padding-top: 15px;
+	border-radius: inherit;
+}
+
+#udsm-dhis-club-header:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	height: 15px;
+	z-index: 2;
+	border-bottom: 1px solid #6c615c;
+	background: #8d7d77;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(132, 110, 100, 0.8)),to(rgba(101, 84, 76, 0.8)));
+	background: -webkit-linear-gradient(top, rgba(132, 110, 100, 0.8), rgba(101, 84, 76, 0.8));
+	background: linear-gradient(top, rgba(132, 110, 100, 0.8), rgba(101, 84, 76, 0.8));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#9d8b83', EndColorStr='#847670');
+	border-top-left-radius: 1px;
+	border-top-right-radius: 1px;
+}
+
+
+/*
+#######################################################################
+    === ENDS:  UDSM DHIS2 Club -  TODO APP - THE HEADER OF THE TODO APP ===
+#######################################################################
+*/
+
+/*
+#######################################################################
+    === START:  UDSM DHIS2 Club -  TODO APP -CREATE NEW TODO TASK ===
+#######################################################################
+*/
+
+#create-new-todo,
+.edit {
+	position: relative;
+	margin: 0;
+	font-size: 24px;
+	font-family: inherit;
+	line-height: 1.4em;
+	border: 0;
+	outline: none;
+	color: inherit;
+	padding: 6px;
+	border: 1px solid #999;
+	box-shadow: inset 0 -1px 5px 0 rgba(0, 0, 0, 0.2);
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-ms-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+	/* font-smoothing: antialiased; */
+}
+
+#create-new-todo {
+	padding: 16px 16px 16px 60px;
+	border: none;
+	background: rgba(0, 0, 0, 0.02);
+	z-index: 2;
+	box-shadow: none;
+}
+
+
+/*
+#######################################################################
+    === ENDS:  UDSM DHIS2 Club -  TODO APP -CREATE NEW TODO TASK ===
+#######################################################################
+*/
+
+#udsm-dhis-club-main {
+	position: relative;
+	z-index: 2;
+	border-top: 1px dotted #adadad;
+}
+
+label[for='toggle-all'] {
+	display: none;
+}
+
+/*
+#######################################################################
+    === START:  UDSM DHIS2 Club -  TODO APP -A LIST OF TODO TASKS ===
+#######################################################################
+*/
+
+#udsm-dhis-club-todo-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#udsm-dhis-club-todo-list li {
+	white-space: pre;
+	word-break: break-word;
+	padding: 15px 60px 15px 15px;
+	margin-left: 45px;
+	display: block;
+	line-height: 1.2;
+	-webkit-transition: color 0.4s;
+	transition: color 0.4s;
+}
+
+#udsm-dhis-club-todo-list li {
+	position: relative;
+	font-size: 24px;
+	border-bottom: 1px dotted #ccc;
+}
+
+#udsm-dhis-club-todo-list li:last-child {
+	border-bottom: none;
+}
+
+
+/*
+#######################################################################
+    === ENDS:  UDSM DHIS2 Club -  TODO APP -A LIST OF TODO TASKS ===
+#######################################################################
+*/
+
+
+/*
+#######################################################################
+    === START:  UDSM DHIS2 Club -  TODO APP -A LIST OF TODO TASKS ===
+#######################################################################
+*/
+
+.todo-completed {
+	text-decoration: line-through
+}
+
+
+
+#udsm-dhis-club-todo-list-completed {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#udsm-dhis-club-todo-list-completed li {
+	white-space: pre;
+	word-break: break-word;
+	padding: 15px 60px 15px 15px;
+	margin-left: 45px;
+	display: block;
+	line-height: 1.2;
+	-webkit-transition: color 0.4s;
+	transition: color 0.4s;
+	text-decoration: line-through;
+	font-weight: bolder;
+	font-style: italic;
+}
+
+#udsm-dhis-club-todo-list-completed li {
+	position: relative;
+	font-size: 24px;
+	border-bottom: 1px dotted #ccc;
+}
+
+#udsm-dhis-club-todo-list-completed li:last-child {
+	border-bottom: none;
+}
+
+
+/*
+#######################################################################
+    === ENDS:  UDSM DHIS2 Club -  TODO APP -A LIST OF TODO TASKS ===
+#######################################################################
+*/
+
+
+/*
+#######################################################################
+    === START:  UDSM DHIS2 Club -  TODO APP - TODO FOOTER ===
+#######################################################################
+*/
+
+#udsm-dhis-club-todo-footer {
+	color: #777;
+	padding: 0 15px;
+	position: absolute;
+	right: 0;
+	bottom: -31px;
+	left: 0;
+	height: 20px;
+	z-index: 1;
+	text-align: center;
+}
+
+#udsm-dhis-club-todo-footer:before {
+	content: '';
+	position: absolute;
+	right: 0;
+	bottom: 31px;
+	left: 0;
+	height: 50px;
+	z-index: -1;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3),
+				0 6px 0 -3px rgba(255, 255, 255, 0.8),
+				0 7px 1px -3px rgba(0, 0, 0, 0.3),
+				0 43px 0 -6px rgba(255, 255, 255, 0.8),
+				0 44px 2px -6px rgba(0, 0, 0, 0.2);
+}
+
+/*
+#######################################################################
+    === ENDS:  UDSM DHIS2 Club -  TODO APP - TODO FOOTER ===
+#######################################################################
+*/
+
+#info {
+	margin: 65px auto 0;
+	color: #a6a6a6;
+	font-size: 18px;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
+	text-align: center;
+}
+
+#info.information {
+	margin: 65px auto 0;
+	color: #a6a6a6;
+	font-size: 10px;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
+	text-align: center;
+}
+
+#info a {
+	color: inherit;
+}
+
+
+hr {
+	margin: 20px 0;
+	border: 0;
+	border-top: 1px dashed #C5C5C5;
+	border-bottom: 1px dashed #F7F7F7;
+}
+
+@media (min-width: 899px) {
+	.learn-bar {
+		width: auto;
+		margin: 0 0 0 300px;
+	}
+
+	.learn-bar > .learn {
+		left: 8px;
+	}
+
+	.learn-bar #todoapp {
+		width: 550px;
+		margin: 130px auto 40px auto;
+	}
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	#toggle-all,
+	#todo-list li .toggle {
+		background: none;
+	}
+
+	#todo-list li .toggle {
+		height: 40px;
+	}
+
+	#toggle-all {
+		top: -56px;
+		left: -15px;
+		width: 65px;
+		height: 41px;
+		-webkit-transform: rotate(90deg);
+		transform: rotate(90deg);
+		-webkit-appearance: none;
+		appearance: none;
+	}
+}
+
+#udsm-dhis-club-main {
+	position: relative;
+	z-index: 2;
+    border-top: 1px dotted #adadad;
+    margin-left: 60px;
+}

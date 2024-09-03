@@ -23,8 +23,8 @@ export class AppComponent {
 
     this.todoState.dispatch(TodoActions.loadTodosSuccess({
       todos: [
-        { title: 'Software is like sex, it is better when it is free!', completed: false, id: "1" },
-        { title: 'Perfection is achieved not when there is nothing more to add, but when there is nothing left to take away.', completed: true, id: "2" }
+        { title: 'Software is like sex, it is better when it is free!', completed: false, id: "qkkpWDy2br4" },
+        { title: 'Perfection is achieved not when there is nothing more to add, but when there is nothing left to take away.', completed: true, id: "qpYLb46g4MH" }
       ]
     }));
   }

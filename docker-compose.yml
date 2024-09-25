@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  todo-app:
+    # Use a pre-built image from the local or remote Docker repository
+    # Alternatively, you could uncomment the 'build' section to build the image using the Dockerfile
+    # build:
+    #   context: .  # Specify the current directory as the build context
+    image: udsm/todo-app:latest  # Define the image name and version to use for the service
+
+    # Assign a custom name to the container for easier identification and management
+    container_name: todo-app-container  # Set a readable name for the container
+
+    # Map the container's port 4200 to the host's port 4200
+    # This allows you to access the Angular development server on http://localhost:4200
+    ports:
+      - "4200:4200"
+
+    # Set environment variables for the container
+    # CHOKIDAR_USEPOLLING is needed for live reloading inside Docker since polling is required for file change detection
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+
+    # Automatically restart the container unless it is explicitly stopped
+    # This ensures the service keeps running even if it crashes or fails
+    restart: unless-stopped
